@@ -12,7 +12,7 @@ const Contact = () => {
     return(
         <main className="flex-fill d-flex flex-column mb-4 min-vh-100">
             <div className="mb-3 text-center">
-            <h1 className='mb-3 fw-bold text-center mt-5'>Contacts</h1>
+            <h1 className=' paddingTop mb-3 fw-bold text-center mt-5'>Contacts</h1>
             <p>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
             <hr className="col-md-5 mx-auto border border-primary border-2 opacity-75" />
             </div>
@@ -113,16 +113,16 @@ const Contact = () => {
         <address >
                 <p className="fs-5 m-0 ">{address.firstName} {address.lastName}</p>
                 
-                <i><img className="img-fluid" src={mapDark}alt="" />  </i>
+                <i><img className="img-fluid" src={mapDark}alt="icon logo map" />  </i>
                  { address.addr.street}
                 <br />
-                <i><img className="img-fluid" src={gpsDark}alt="" />  </i>
+                <i><img className="img-fluid" src={gpsDark}alt="icon logo gps" />  </i>
                 {address.addr.code} {address.addr.city}
                 <br />
-                <i><img className="img-fluid" src={phoneDark}alt="" />  </i>
+                <i><img className="img-fluid" src={phoneDark}alt="icon logo phone" />  </i>
                 {address.phone}
                 <br />
-                <i><img className="img-fluid" src={mailDark}alt="" />  </i>
+                <i><img className="img-fluid" src={mailDark}alt="icon logo mail" />  </i>
                 {address.mail}
             </address>
 

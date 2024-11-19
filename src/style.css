@@ -1,4 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
 .social:hover{
 	opacity: 0.5;
 		
 }
+
+body, footer, header {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, strong {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 600; 
+}
+  
+
+
+.color:hover {
+	background-color: #efefef;
+
+
+}
+
+.card {
+	background-color: #efefef;
+	border: 1px solid #ddd;
+	
+	box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.1); 
+	transition: all 0.3s ease; 
+}
+  
+
+.card:hover {
+	background-color: #efefef;
+	box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.paddingTop  {
+	padding: 40px
+}
+
+
+/* Style de base pour les liens du menu */
+.navbar-nav .nav-item {
+	text-decoration: none; /* Pas de soulignement par défaut */
+	font-weight: normal; /* Police normale */
+	color: #f8f9fa; /* Couleur claire pour contraster avec le fond sombre */
+	transition: all 0.3s ease; /* Transition fluide pour les changements */
+  }
+  
+  /* Lien actif (gras + souligné) */
+  .navbar-nav .nav-item.active {
+	font-weight: bold; /* Gras pour mettre en évidence */
+	text-decoration: underline; /* Souligné */
+  }
+  
+  /* Effet au survol */
+  .navbar-nav .nav-item:hover {
+	text-decoration: underline; /* Soulignement au survol */
+	color: #adb5bd; /* Couleur légèrement différente au survol */
+  }
+  

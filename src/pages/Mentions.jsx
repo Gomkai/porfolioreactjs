@@ -11,14 +11,14 @@ const Mentions = () => {
         
         <main className="flex-fill d-flex flex-column min-vh-100">
         <div className="text-center">
-         <h1 className='mb-2 fw-bold text-center mt-5'>Mentions légales</h1>
+         <h1 className='paddingTop mb-2 fw-bold text-center mt-5'>Mentions légales</h1>
          <hr className="col-md-5 mx-auto border border-primary border-2 opacity-75" />
         </div>
 
 
         <div class="accordion" id="accordionExample">
 
-            <div class="accordion-item col-md-8 w-full max-w-2xl mx-auto border border-gray-200 rounded-md mb-2 ">
+            <div class=" accordion-item col-md-8 w-full max-w-2xl mx-auto border border-gray-200 rounded-md mb-2 ">
                 <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Éditeur du site
@@ -31,19 +31,19 @@ const Mentions = () => {
                     <p className="fs-5 m-0 ">{address.firstName} {address.lastName}</p>
              
 
-                    <i><img className="img-fluid" src={gpsDark}alt="" /> </i>
+                    <i><img className="img-fluid" src={gpsDark}alt="icon logo gps" /> </i>
                     {address.addr.street}
                     <br />
 
-                    <i><img className="img-fluid" src={mapDark}alt="" /> </i>
+                    <i><img className="img-fluid" src={mapDark}alt="icon logo map" /> </i>
                     {address.addr.code} {address.addr.city}, {address.addr.country}
                     <br />
 
-                    <i><img className="img-fluid" src={phoneDark}alt="" /> </i>
+                    <i><img className="img-fluid" src={phoneDark}alt="icon logo phone" /> </i>
                     {address.phone}
                     <br />
 
-                    <i><img className="img-fluid" src={mailDark}alt="" /> </i>
+                    <i><img className="img-fluid" src={mailDark}alt="icon logo mail" /> </i>
                     {address.mail}
 
                 </address>
@@ -54,7 +54,7 @@ const Mentions = () => {
             <div class="accordion-item col-md-8 w-full max-w-2xl mx-auto border border-gray-200 rounded-md mb-2 ">
                 <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Hébergeur
+                <strong>Hébergeur</strong>
                 </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -63,7 +63,7 @@ const Mentions = () => {
                 <address>
                     <address>91 rue du Faubourg Saint-Honoré, 75008 Paris</address>
                 </address>
-                <i><img className="img-fluid" src={worldDark}alt="" /> </i><a href="https://www.alwaydata.com/" target="_blanck">www.alwaydata.com</a>                    </div>
+                <i><img className="img-fluid" src={worldDark}alt="icon logo world" /> </i><a href="https://www.alwaydata.com/" target="_blanck">www.alwaydata.com</a>                    </div>
                 </div>
             </div>
 
@@ -82,6 +82,8 @@ const Mentions = () => {
                     </div>
                     </div>
             </div>
+
+
         </div>
 
 

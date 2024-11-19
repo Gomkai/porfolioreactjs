@@ -13,7 +13,7 @@ import Liens from '../Liens';
 const Portfolio = () => {
     return(
         <main>
-             <img className="img-fluid" src={ImageBanner}  alt="Banner"/>
+             <img className="img-fluid" src={ImageBanner}  alt="Banner flash blue"/>
             <div className="text-center">
             <h1 className="mb-2 fw-bold"> Portfolio </h1>
             <p className=" fw-bold">Voici Quelques-unes de mes réalisations.</p>
@@ -22,10 +22,10 @@ const Portfolio = () => {
             <div className="text-center p-4 ">
             <div class="row justify-content-center me-5 ms-5">
                 
-                <section className="col-md-6 col-lg-4 mb-5">
-                    <div className="border border-secondary-subtle rounded-top  rounded-bottom">    
+                <section className="col-md-6 col-lg-4 mb-5 ">
+                    <div className=" card border border-secondary-subtle rounded-top  rounded-bottom">    
                         <img src="" alt="" />
-                        <img className="img-fluid border rounded-top"  src={ImagePortfolioFresh} alt='panier de légumes divers'/>
+                        <img className="img-fluid border rounded-top"  src={ImagePortfolioFresh} alt='basket of various vegetables'/>
                         <h4 className='fw-bold'>Fresh Food</h4>
                         <p>site de vente de produits frais en ligne</p>
                         <a href={Liens.fresh} class="btn btn-primary btn-sm  mb-2 " target="_blank" rel="noopener noreferrer">Voir le site</a>
@@ -36,8 +36,8 @@ const Portfolio = () => {
                 </section>
 
                 <section className="col-md-6 col-lg-4 mb-5 ">
-                    <div className="border border-secondary-subtle rounded-top  rounded-bottom">
-                        <img className="img-fluid border "  src={ImagePortfolioRestaurant} alt='plateau de sushi nigiri sashimi'/>
+                    <div className=" card border border-secondary-subtle rounded-top  rounded-bottom">
+                        <img className="img-fluid border "  src={ImagePortfolioRestaurant} alt='nigiri sashimi sushi platter'/>
                         <h4 className='fw-bold' >Restaurant Akira</h4>
                         <p>site de vente de produits bien</p>
                         <a href={Liens.akira} class="btn btn-primary btn-sm mb-2 " target="_blank" rel="noopener noreferrer">Voir le site</a>
@@ -49,8 +49,8 @@ const Portfolio = () => {
 
                 <section className="col-md-6 col-lg-4 mb-5 ">
                     
-                    <div className="border border-secondary-subtle rounded-top  rounded-bottom">
-                        <img className="img-fluid border "  src={ImagePortfolioEspace} alt='tete de boudha avec des pierres et un soleil couchant' />
+                    <div className=" card border border-secondary-subtle rounded-top  rounded-bottom">
+                        <img className="img-fluid border "  src={ImagePortfolioEspace} alt='Buddha head with stones and a setting sun' />
                         <h4 className='fw-bold'>Espace bien-etre</h4>
                         <p>site de vente de produits bien-etre</p>
                         <a href={Liens.bienEtre} class="btn btn-primary btn-sm mb-2" target="_blank" rel="noopener noreferrer">Voir le site</a>
@@ -64,8 +64,8 @@ const Portfolio = () => {
                 </section >
 
                 <section className="col-md-6 col-lg-4 mb-5 ">
-                    <div className="border border-secondary-subtle rounded-top  rounded-bottom">
-                        <img className="img-fluid border"  src={ImagePortfolioSeo} alt='Des mots disposés à la fois horizontalement et verticalement, formant un ensemble autour du mot central SEO le tout dans un style évoquant le monde du développement' />
+                    <div className=" card border border-secondary-subtle rounded-top  rounded-bottom">
+                        <img className="img-fluid border"  src={ImagePortfolioSeo} alt='Words arranged both horizontally and vertically, forming a whole around the central word SEO, all in a style evoking the world of development' />
                         <h4 className='fw-bold'>SEO</h4>
                         <p>Amélioriation du réf d'un site e-commerce</p>
                         <a href={Liens.seo} class="btn btn-primary btn-sm mb-2" target="_blank" rel="noopener noreferrer">Voir le site</a>
@@ -76,8 +76,8 @@ const Portfolio = () => {
                 </section>
 
                 <section className="col-md-6 col-lg-4 mb-5 ">
-                    <div className="border border-secondary-subtle rounded-top  rounded-bottom">
-                        <img className="img-fluid border rounded-top"  src={ImagePortfolioCoder} alt='des lignes de code'/>
+                    <div className=" card border border-secondary-subtle rounded-top  rounded-bottom">
+                        <img className="img-fluid border rounded-top"  src={ImagePortfolioCoder} alt='lines of code'/>
                         <h4 className='fw-bold'>Création d'une API</h4>
                         <p>Création d'une API RESTRFULL publique</p>
                         <a href={Liens.api} class="btn btn-primary btn-sm mb-2" target="_blank" rel="noopener noreferrer">Voir le site</a>
@@ -88,8 +88,8 @@ const Portfolio = () => {
                 </section>
 
                 <section className="col-md-6 col-lg-4 mb-5 ">
-                <div className="border border-secondary-subtle rounded-top  rounded-bottom">
-                    <img className="img-fluid border rounded-top"  src={ImagePortfolioScreens} alt='une tablette un pc portable et un ordinateur sur une table' />
+                <div className=" card border border-secondary-subtle rounded-top  rounded-bottom">
+                    <img className="img-fluid border rounded-top"  src={ImagePortfolioScreens} alt='a tablet, a laptop and a computer on a table' />
                     <h4 className='fw-bold'>Maquette d'un site web</h4>
                     <p>Création du prototype d'un site</p>
                     <a href={Liens.figma} class="btn btn-primary btn-sm mb-2" target="_blank" rel="noopener noreferrer">Voir le site</a>

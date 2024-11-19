@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, Route, Link} from "react-router-dom";
+import {Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from './pages/Home';
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
@@ -12,6 +12,8 @@ import address from './Address';
 
 
 export default function App(){
+  const location = useLocation(); // Hook pour obtenir l'URL active
+
   return(
     <div className="App">
       <header>
@@ -27,12 +29,22 @@ export default function App(){
 
                 <div class="collapse navbar-collapse"id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <Link to="/"className="nav-item mx-0 mx-lg-1 text-decoration-none text-light">Accueil</Link>
-                        <Link to="/services"className="nav-item mx-0 mx-lg-1 text-decoration-none text-light">Services</Link>
-                        <Link to="/portfolio"className="nav-item mx-0 mx-lg-1 text-decoration-none text-light">Portfolio</Link>
-                        <Link to="/contact" className="nav-item mx-0 mx-lg-1 text-decoration-none text-light">Contact</Link>
-                        <Link to="/Mentions"className="nav-item mx-0 mx-lg-1 text-decoration-none text-light">Mentions légales</Link>
-                    </ul>
+                        <Link to="/" className={`nav-item mx-0 mx-lg-1 text-light ${
+                        location.pathname === "/" ? "active" : ""}`} > Accueil </Link> 
+
+                        <Link   to="/services" className={`nav-item mx-0 mx-lg-1 text-light ${
+                          location.pathname === "/services" ? "active" : ""}`}> Services</Link>
+
+                        <Link to="/portfolio" className={`nav-item mx-0 mx-lg-1  text-light ${
+                        location.pathname === "/portfolio" ? "active" : ""}`} >Portfolio</Link>   
+
+
+                        <Link to="/contact" className={`nav-item mx-0 mx-lg-1 text-light ${
+                        location.pathname === "/contact" ? "active" : ""}`}>Contact</Link>            
+
+                        <Link to="/Mentions"className={`nav-item mx-0 mx-lg-1 text-light ${
+                        location.pathname === "/Mentions" ? "active" : "" }`} >Mentions légales</Link>     
+                </ul>
                 </div>
             </div>
         </nav>

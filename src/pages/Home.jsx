@@ -13,7 +13,7 @@ const Home = () => {
       <main>
 
     <section className="position-relative text-center">
-        <img src={ImageHeroBG} alt="Hero" className="img-fluid"/>
+        <img src={ImageHeroBG} alt="a man in front of a screen with code" className="img-fluid"/>
         <div className="position-absolute top-50 start-50 translate-middle text-white">
             <h1 className="fw-bold " >BONJOUR, je suis {address.firstName} {address.lastName} </h1>
             <h2 className="fw-bold ">Développeur web full stack</h2>
@@ -61,7 +61,7 @@ const Home = () => {
         {/* Section 1 */}
         <section className="col-md-4 ms-2 border border-end-0 ">
           <h3 className="border-bottom border-4 border-primary">A propos</h3>
-          <img className="img-fluid" src={ImageJohn} alt="Hero" />
+          <img className="img-fluid" src={ImageJohn} alt="a man in the office" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
             voluptatem sint quam repellat, et corporis quisquam aliquam tempora
