@@ -2,7 +2,7 @@ import React from "react";
 import ImageHeroBG from '../images/hero-bg.jpg';
 import ImageJohn from '../images/john-doe-about.jpg';
 import address from '../Address';
-import GithubProfileModal from '../GitApi'
+import GithubProfileModal from '../GitApi.jsx'
 
 const Home = () => {
     
