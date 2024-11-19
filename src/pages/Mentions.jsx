@@ -36,7 +36,7 @@ const Mentions = () => {
                     <br />
 
                     <i><img className="img-fluid" src={mapDark}alt="" /> </i>
-                    {address.addr.code}
+                    {address.addr.code} {address.addr.city}, {address.addr.country}
                     <br />
 
                     <i><img className="img-fluid" src={phoneDark}alt="" /> </i>

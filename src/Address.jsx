@@ -9,7 +9,8 @@ const address = {
     addr : {
         city : "Paris",
         street : "3 Rue du paradis",
-        code : "75000"
+        code : "75000",
+        country : "FRANCE"
     }
 }
 
