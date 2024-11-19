@@ -78,8 +78,7 @@ const GithubProfileModal = () => {
           
           
             </div>
-        
-        
+
         </div>
       )}
     </div>

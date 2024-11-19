@@ -7,7 +7,7 @@ import ImagePortfolioRestaurant from '../images/portfolio/restaurant-japonais.jp
 import ImagePortfolioScreens from '../images/portfolio/screens.jpg';
 import ImagePortfolioSeo from '../images/portfolio/seo.jpg';
 
-import Liens from '../Liens.jsx';
+import Liens from '../Liens';
 
 
 const Portfolio = () => {
