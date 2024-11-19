@@ -17,7 +17,7 @@ const Mentions = () => {
 
 
         <div class="accordion" id="accordionExample">
-
+ {/* Accordion container for expandable sections */}
             <div class=" accordion-item col-md-8 w-full max-w-2xl mx-auto border border-gray-200 rounded-md mb-2 ">
                 <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -50,7 +50,7 @@ const Mentions = () => {
                     </div>
                 </div>
             </div>
-
+ {/* Section for the web hosting provider */}
             <div class="accordion-item col-md-8 w-full max-w-2xl mx-auto border border-gray-200 rounded-md mb-2 ">
                 <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -66,7 +66,7 @@ const Mentions = () => {
                 <i><img className="img-fluid" src={worldDark}alt="icon logo world" /> </i><a href="https://www.alwaydata.com/" target="_blanck">www.alwaydata.com</a>                    </div>
                 </div>
             </div>
-
+{/* Section for credits */}
             <div class="accordion-item col-md-8 w-full max-w-2xl mx-auto border border-gray-200 rounded-md mb-2 ">
                 <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -92,3 +92,4 @@ const Mentions = () => {
     )
 }
 export default Mentions;
+// Export the Mentions component as default for use in other parts of the app

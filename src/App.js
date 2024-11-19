@@ -12,7 +12,8 @@ import address from './Address';
 
 
 export default function App(){
-  const location = useLocation(); // Hook pour obtenir l'URL active
+  const location = useLocation(); 
+  // useLocation hook is used to get the current URL path
 
   return(
     <div className="App">
@@ -49,7 +50,7 @@ export default function App(){
             </div>
         </nav>
       </header>
-
+{/* Define the Routes that map to specific components */}
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/services" element={<Services/>}></Route>
@@ -58,8 +59,10 @@ export default function App(){
         <Route path="/mentions" element={<Mentions/>}></Route>
       </Routes>
 
+{/* Footer component */}
       <Footer />
-      
+
+{/* Bootstrap JS included for additional functionality, such as handling the navbar toggle */}    
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     </div>

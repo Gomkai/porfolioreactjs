@@ -26,7 +26,7 @@ const Services = () => {
             <div className="container">
 
                 <div className="row d-flex align-items-stretch">
-
+{/* UX Design Service */}
                     <div className="col-md-4">
                         <section className="card text-center border border-secondary-subtle h-100">
                             <i><img className="mt-3" src={crayon} alt="icon logo pen" /></i>
@@ -34,7 +34,7 @@ const Services = () => {
                             <p>L'UX Design est une discipline qui consiste à concevoir des produits (sites web, applications mobiles, logiciels, objets connectés, etc.) en plaçant l'utilisateur au centre des préoccupations. L'objectif est de rendre l'expérience utilisateur la plus fluide et agréable possible.</p>
                         </section>
                     </div>
-
+{/* Web Development Service */}
                     <div className="col-md-4">
                         <section className="card text-center border border-secondary-subtle h-100">
                             <i><img  className="mt-3" src={loupe} alt="icon logo magnifying glass " /></i>
@@ -42,7 +42,7 @@ const Services = () => {
                             <p> Le développement de sites web consiste à créer des sites internet en utilisant des langages de programmation (HTML, CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap, React, Angular, etc.)</p>
                         </section>
                     </div>
-
+{/* SEO (Search Engine Optimization) Service */}
                     <div className="col-md-4">
                         <section className="card text-center border border-secondary-subtle h-100">
                             <i > <img className="mt-3" src={html} alt="icon logo code" /></i>
@@ -63,3 +63,4 @@ const Services = () => {
 }
 
 export default Services;
+// Export the Services component so it can be used in other parts of the app

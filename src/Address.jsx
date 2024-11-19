@@ -15,5 +15,5 @@ const address = {
 }
 
 export default address;
-
+// Export the address object to be used elsewhere in the project
 

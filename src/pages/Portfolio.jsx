@@ -8,6 +8,7 @@ import ImagePortfolioScreens from '../images/portfolio/screens.jpg';
 import ImagePortfolioSeo from '../images/portfolio/seo.jpg';
 
 import Liens from '../Liens';
+// Importing the `Liens` object which likely contains URLs for each portfolio project
 
 
 const Portfolio = () => {
@@ -21,7 +22,7 @@ const Portfolio = () => {
            
             <div className="text-center p-4 ">
             <div class="row justify-content-center me-5 ms-5">
-                
+ {/* portfolio items */}
                 <section className="col-md-6 col-lg-4 mb-5 ">
                     <div className=" card border border-secondary-subtle rounded-top  rounded-bottom">    
                         <img src="" alt="" />
@@ -107,3 +108,4 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
+// Export the Portfolio component so it can be used in other parts of the app

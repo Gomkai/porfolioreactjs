@@ -13,6 +13,7 @@ const Footer = () => {
 <hr />
 <div className="container text-center ">
     <div className="row ">
+{/* Personal Information Section */}
         <section className="col-md-4 mt-3 text-white">
             <address >
                 <strong>{address.firstName} {address.lastName}</strong>
@@ -31,6 +32,7 @@ const Footer = () => {
             <a href="https://fr.linkedin.com/" target="_blank" rel="noopener noreferrer" className='social'><i><img className="img-fluid" src={inGrey} alt="" />  </i></a>
         </section>
 
+{/* Links Section */}
         <section className="col-md-4 mt-3 section-links ">
           <span className="text-light fs-5 fw-bold">Lien utiles</span>
             <div className="row ">
@@ -40,9 +42,9 @@ const Footer = () => {
             <p className="m-0"><Link to="/contact" className="text-decoration-none text-light">Contact</Link></p>
             <p className="m-0"><Link to="/Mentions" className="text-decoration-none text-light">Mentions légales</Link></p>
             </div>
-
         </section>
 
+{/* Recent Projects Section */}
         <section className="col-md-4 mt-3 section-links">
          <span className="text-light fs-5 fw-bold">Mes derniéres réalisations</span>
             <div className="row">

@@ -1,12 +1,15 @@
 
 import React from "react";
+
 import GoogleMap from "../GoogleMaps";
 import address from '../Address';
+// Import the address data (likely an object containing personal/business information)
+
 import mapDark from '../../src/images/flaticon/mapDark.png'; 
 import gpsDark from '../../src/images/flaticon/gpsDark.png'; 
 import phoneDark from '../../src/images/flaticon/phoneDark.png'; 
 import mailDark from '../../src/images/flaticon/mailDark.png'; 
-
+// Import images/icons for map, GPS, phone, and mail (used as visual cues for contact information)
 
 const Contact = () => {
     return(
@@ -28,7 +31,7 @@ const Contact = () => {
         <hr className="col-md-12 mx-auto border border-primary border-3 opacity-75" />
 
         <form className="border p-2 rounded shadow-sm">
-        {/* Nom */}
+       {/* Name input */}
         <div className="">
           <label htmlFor="name" className="form-label">
             
@@ -42,7 +45,7 @@ const Contact = () => {
           />
         </div>
 
-        {/* Adresse email */}
+            {/* Email input */}
         <div className="">
           <label htmlFor="email" className="form-label">
             
@@ -56,7 +59,7 @@ const Contact = () => {
           />
         </div>
 
-        {/* Numéro de téléphone */}
+         {/* Phone number input */}
         <div className="-m-3">
           <label htmlFor="phone" className="form-label">
             
@@ -70,7 +73,7 @@ const Contact = () => {
           />
         </div>
 
-        {/* Sujet */}
+         {/* Subject input */}
         <div className="">
           <label htmlFor="subject" className="form-label">
            
@@ -83,7 +86,7 @@ const Contact = () => {
           />
         </div>
 
-        {/* Message */}
+        {/* Message textarea */}
         <div className="mb-3 ">
           <label htmlFor="message" className="form-label">
          
@@ -96,7 +99,7 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        {/* Bouton envoyer */}
+         {/* Submit button */}
         <div className=" text-center ">
         <button type="submit" className=" btn btn-primary btn-sm ">
           Envoyer
@@ -106,7 +109,7 @@ const Contact = () => {
       </form>
 
         </section>
-            
+         {/* Section for contact details */}    
         <section className="col-md-6">
         <h2 className="fw-bold" >Mes coordonnées</h2>
         <hr className="col-md-12 mx-auto border border-primary border-3 opacity-75" />
@@ -125,7 +128,7 @@ const Contact = () => {
                 <i><img className="img-fluid" src={mailDark}alt="icon logo mail" />  </i>
                 {address.mail}
             </address>
-
+ {/* Include the GoogleMap component */}
         <GoogleMap />
 
         </section>
@@ -142,3 +145,4 @@ const Contact = () => {
 }
 
 export default Contact ;
+// Export the Contact component as default for use in other parts of the app

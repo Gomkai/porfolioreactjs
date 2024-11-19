@@ -5,10 +5,12 @@ import cubeWhite from '../src/images/flaticon/cubeWhite.png';
 
 
 const GithubProfileModal = () => {
+  // State variables to store profile data, loading status, and errors
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // useEffect hook to fetch GitHub profile data when the component mounts
   useEffect(() => {
     const fetchGithubProfile = async () => {
       try {
@@ -27,12 +29,14 @@ const GithubProfileModal = () => {
 
     fetchGithubProfile();
   }, []);
-
+// Display loading spinner while the profile is being fetched
   if (loading) return <p>Chargement...</p>;
+  // Display error message if there's an issue fetching the profile
   if (error) return <p>Erreur : {error}</p>;
 
   return (
     <div className="modal-body bg-dark">{profile && (
+      // Display profile data when it's fetched successfully
         <div className="container-fluid">
             <div className="row">
                 <div className="col-md-4">
@@ -52,7 +56,7 @@ const GithubProfileModal = () => {
                     </a>
 
                    
-
+{/* Profile stats such as repositories, followers, and following */}
                     <div className="d-flex flex-column mt-3">
 
                         <div className="text-light mt-2 border-bottom border-secondary">
