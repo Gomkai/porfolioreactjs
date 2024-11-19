@@ -31,7 +31,7 @@ const Footer = () => {
             <a href="https://fr.linkedin.com/" target="_blank" rel="noopener noreferrer" className='social'><i><img className="img-fluid" src={inGrey} alt="" />  </i></a>
         </section>
 
-        <section className="col-md-4 mt-3 ">
+        <section className="col-md-4 mt-3 section-links ">
           <span className="text-light fs-5 fw-bold">Lien utiles</span>
             <div className="row ">
             <p className="m-0"><Link to="/" className="text-decoration-none text-light">Accueil</Link></p>
@@ -43,7 +43,7 @@ const Footer = () => {
 
         </section>
 
-        <section className="col-md-4 mt-3 ">
+        <section className="col-md-4 mt-3 section-links">
          <span className="text-light fs-5 fw-bold">Mes derniéres réalisations</span>
             <div className="row">
 

@@ -43,23 +43,27 @@ h1, h2, strong {
 }
 
 
-/* Style de base pour les liens du menu */
+
 .navbar-nav .nav-item {
-	text-decoration: none; /* Pas de soulignement par défaut */
-	font-weight: normal; /* Police normale */
-	color: #f8f9fa; /* Couleur claire pour contraster avec le fond sombre */
-	transition: all 0.3s ease; /* Transition fluide pour les changements */
+	text-decoration: none;
+	color: #f8f9fa;
+	transition: all 0.3s ease; 
   }
   
   /* Lien actif (gras + souligné) */
   .navbar-nav .nav-item.active {
-	font-weight: bold; /* Gras pour mettre en évidence */
+	font-weight: bold; 
 	text-decoration: underline; /* Souligné */
   }
   
   /* Effet au survol */
   .navbar-nav .nav-item:hover {
-	text-decoration: underline; /* Soulignement au survol */
-	color: #adb5bd; /* Couleur légèrement différente au survol */
+	text-decoration: underline; 
+	color: #adb5bd; 
   }
   
+
+  .section-links a:hover {
+	font-weight: bold; /* Gras au survol */
+	color: #adb5bd; /* Couleur légèrement différente (optionnel) */
+  }
